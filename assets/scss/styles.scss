@@ -16,6 +16,7 @@
 }
 header{
     height: 100vh;
+    outline: black solid 1px;
 }
 .menu {
   padding-top: 55px;
@@ -96,4 +97,76 @@ header{
           width: 100%;
       }
   }
+}
+// skills
+#skills{
+  height: 100vh;
+}
+.skillsBlock{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 530px 340px;
+  grid-template-areas: 
+  "speaking writing reading"
+  "speaking listening listening"
+  ;
+}
+.skillsBlock__card{
+  padding: 40px;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.skillsBlock__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skillsBlock__text{
+  h3{
+    font-weight: 600;
+    font-size: 30px;
+    color: #263238;
+    margin-bottom: 20px;
+  }
+  p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8F95A5;
+    margin-bottom: 30px;
+  }
+}
+.learnMoreButton{
+  color: white;
+  text-decoration: none;
+  background-color: #263238;
+  padding: 17px 60px;
+  border: 1px solid #263238;
+  transition: all 300ms;
+  border-radius: 5px;
+  width: max-content;
+  &:hover{
+    color: #263238;
+    background-color: white;
+  }
+}
+.speaking{
+  grid-area: speaking;
+  .skillsBlock__info{
+    height: 100%;
+  }
+}
+.writing{
+  grid-area: writing;
+}
+.reading{
+  grid-area: reading;
+}
+.listening{
+  grid-area: listening;
+  flex-direction: row-reverse;
 }

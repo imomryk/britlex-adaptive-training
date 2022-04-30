@@ -19,9 +19,10 @@
 /* line 17, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 header {
   height: 100vh;
+  outline: black solid 1px;
 }
 
-/* line 20, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 21, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 .menu {
   padding-top: 55px;
   padding-bottom: 100px;
@@ -30,35 +31,35 @@ header {
   align-items: center;
 }
 
-/* line 26, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 27, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 .menu a {
   text-decoration: none;
   color: #000000;
 }
 
-/* line 30, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 31, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 .menu .logo {
   font-size: 36px;
 }
 
-/* line 32, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 33, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 .menu .logo span:nth-child(2n) {
   color: #939393;
 }
 
-/* line 36, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 37, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 .menu ul {
   font-size: 20px;
   list-style-type: none;
   display: flex;
 }
 
-/* line 40, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 41, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 .menu ul li {
   margin: 0 20px;
 }
 
-/* line 44, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 45, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 .menu .navContact {
   font-size: 24px;
   padding: 17px 57px;
@@ -68,26 +69,26 @@ header {
   transition: 300ms;
 }
 
-/* line 51, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 52, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 .menu .navContact:hover {
   color: white;
   background-color: #263238;
 }
 
-/* line 57, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 58, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 #intro {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 60, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 61, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 #intro .introInfoBlock {
   display: flex;
   flex-direction: column;
   width: 650px;
 }
 
-/* line 64, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 65, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 #intro .introInfoBlock__heading {
   font-size: 64px;
   font-weight: 600;
@@ -95,7 +96,7 @@ header {
   margin-bottom: 40px;
 }
 
-/* line 70, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 71, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 #intro .introInfoBlock__text {
   font-size: 24px;
   line-height: 36px;
@@ -103,7 +104,7 @@ header {
   margin-bottom: 60px;
 }
 
-/* line 76, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 77, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 #intro .introInfoBlock a {
   padding: 32px 120px;
   width: fit-content;
@@ -117,20 +118,112 @@ header {
   transition: 300ms;
 }
 
-/* line 87, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 88, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 #intro .introInfoBlock a:hover {
   color: #263238;
   background-color: white;
 }
 
-/* line 93, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 94, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 #intro .introImgBlock {
   width: 650px;
 }
 
-/* line 95, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+/* line 96, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
 #intro .introImgBlock img {
   width: 100%;
+}
+
+/* line 102, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+#skills {
+  height: 100vh;
+}
+
+/* line 105, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.skillsBlock {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 530px 340px;
+  grid-template-areas: "speaking writing reading" "speaking listening listening";
+}
+
+/* line 115, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.skillsBlock__card {
+  padding: 40px;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+/* line 123, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.skillsBlock__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 129, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.skillsBlock__text h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #263238;
+  margin-bottom: 20px;
+}
+
+/* line 135, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.skillsBlock__text p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F95A5;
+  margin-bottom: 30px;
+}
+
+/* line 143, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.learnMoreButton {
+  color: white;
+  text-decoration: none;
+  background-color: #263238;
+  padding: 17px 60px;
+  border: 1px solid #263238;
+  transition: all 300ms;
+  border-radius: 5px;
+  width: max-content;
+}
+
+/* line 152, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.learnMoreButton:hover {
+  color: #263238;
+  background-color: white;
+}
+
+/* line 157, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.speaking {
+  grid-area: speaking;
+}
+
+/* line 159, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.speaking .skillsBlock__info {
+  height: 100%;
+}
+
+/* line 163, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.writing {
+  grid-area: writing;
+}
+
+/* line 166, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.reading {
+  grid-area: reading;
+}
+
+/* line 169, D:/GoogleCloud/Code/britlex-adaptive-training/assets/scss/styles.scss */
+.listening {
+  grid-area: listening;
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=../css/styles.map */
